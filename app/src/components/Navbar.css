@@ -11,15 +11,27 @@ nav a {
     text-decoration: none;  /*Remover sublinhado*/
     color:white;
     background-color: #6d3d15;
+    border-style: solid;
+    border-radius: 1 px;
+    border-color:rgba(0,0,0,50)
 }
 /*Selecionando*/
 nav a:hover {
     color: black;
     background-color: #fffc41;
+    border-style: solid;
+    border-radius: 1 px;
+    border-color:rgba(0,0,0,50)
 
 }
 /*Link atual*/
 .active {
     background-color: brown;
     color: grey;
+}
+
+h1 {
+    font-size: 20 px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
 }

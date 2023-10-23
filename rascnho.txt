@@ -1,0 +1,9 @@
+Mainpage -> Boas vindas, catálogo
+
+Carrinho -> Lista de itens selecionados
+
+Minha conta -> Informações da conta de usuário
+
+Sobre -> Informações sobre desenvolvedor, empresa, licença
+
+Pesquisar sobre (menu hamburger)
