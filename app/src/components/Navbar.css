@@ -1,0 +1,25 @@
+/*Barra de navegação geral*/
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+/*Não selecionado*/
+nav a {
+    margin: 10 px;
+    padding: 5 px;
+    text-decoration: none;  /*Remover sublinhado*/
+    color:white;
+    background-color: #6d3d15;
+}
+/*Selecionando*/
+nav a:hover {
+    color: black;
+    background-color: #fffc41;
+
+}
+/*Link atual*/
+.active {
+    background-color: brown;
+    color: grey;
+}
