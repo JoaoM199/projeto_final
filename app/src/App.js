@@ -14,11 +14,6 @@ import Myaccount from './pages/Myaccount';
 function App() {
   return (
     <div className="App">
-      {/*Logo do aplicativo*/ }
-      <div className="logoInicio">  
-        <p>Inserir logo aqui</p>
-      </div>
-
       <div className='mainPage'>
         {/* Estrutura de navegação do site */}
         <BrowserRouter>
