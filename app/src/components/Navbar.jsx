@@ -7,7 +7,10 @@ import { Link } from 'react-router-dom' // Links para navegação
 export const Navbar = () => {
   return (
       <nav>
-        <Link to="/" className='tittle'>(inserir logo aqui)</Link>               {/*Página inicial*/}
+        <Link to="/" className='tittle'>
+          (inserir logo aqui) {/*Página inicial*/}
+        </Link>
+
         {/*Menu mobile*/}
         <div className='menu'>
           <span></span>
