@@ -2,7 +2,7 @@ import React from 'react'
 
 const Wishlist = () => {
   return (
-    <div>
+    <div class='quadro'>
         <h1>Wishlist</h1>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react' //navegação
 
-import "./Navbar.css"; // Aparência da barra de navegação
+import "./Navbar.module.css"; // Aparência da barra de navegação
 
 import { Link } from 'react-router-dom' // Links para navegação
 
@@ -15,7 +15,7 @@ export const Navbar = () => {
         <div className='menu'>
           <span></span>
           <span></span>
-          <spna></spna>
+          <span></span>
         </div>
 
         <ul>

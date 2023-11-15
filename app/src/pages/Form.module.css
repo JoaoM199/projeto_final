@@ -12,3 +12,10 @@ input, textarea, select {
 p {
     text-align: left;
 }
+
+.formbox {
+    background-color: gray;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 15px;
+  }
