@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif; 
+  background-color: #d2691e;
+  padding: 15px;
+  margin: 30px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive; 
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #747474;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #57a0ff;
+  color: black;
+}
