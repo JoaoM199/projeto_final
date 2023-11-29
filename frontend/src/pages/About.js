@@ -5,7 +5,7 @@ import authorImg from "../img/author.jpg"
 
 const About = () =>  {
     return (
-        <div classname={style.quadro}>
+        <div className={style.quadro}>
             <h1>Ajuda</h1>
             <h2>Sobre a empresa</h2>
             <p>A X é uma empresa fictícia de alimentos fundada em 2023 como o objetivo usada de exemplo para o desenvolvimento desse projeto </p>

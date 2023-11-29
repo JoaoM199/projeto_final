@@ -7,6 +7,7 @@ const NewAccount = () => {
   const [displayName, setdisplayName] = useState("");
   const [birthDate, setBirthDate] = useState("");
   const [email, setEmail] = useState("");
+  const [adress, setAdress] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmpassword] = useState("");
   const [error, setError] = useState("");
@@ -17,7 +18,9 @@ const NewAccount = () => {
     setError("")
 
     const user = {
-      displayName,
+      name,
+      birthDate,
+      adress,
       email,
       password
     }
@@ -56,6 +59,17 @@ const NewAccount = () => {
                   placeholder='Digite a sua data de nascimento'
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
+                />
+
+                <label>
+                  <span>Endereço</span>
+                </label>
+                <input 
+                  type='text'
+                  name='endereço'
+                  placeholder='Digite o seu endereço'
+                  value={adress}
+                  onChange={(e) => setAdress(e.target.value)}
                 />
 
                 <label htmlFor="email">

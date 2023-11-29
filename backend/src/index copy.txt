@@ -1,0 +1,33 @@
+import express from 'express';
+import cors from 'cors';
+import productsRouter from './routes/products.router.js'
+//import userRouter from './routes/user.router.js'
+
+const port = process.env.PORT; // Porta da API no arquivo env
+
+const app = express(); // Iniciar aplicação
+
+// Solve CORS
+app.use(cors({ 
+    credentials: true, 
+    origin: "http://localhost:3000"
+}));
+
+app.use('/api/products', productsRouter) //Produtos
+//app.use('/api/user', userRouter) //Produtos
+
+// DB connection
+require("./config/db.js")
+
+// routes
+const router = require("./routes/router.js");
+
+app(router);
+
+// Configurar JSON e form data
+app(express.json())
+app(express.urlencoded({extended: false})) // Trabalhar com requisições
+
+app.listen(port, () =>{
+    console.log(`Iniciando aplicação na porta ${port}`);
+});
