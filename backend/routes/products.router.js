@@ -1,7 +1,6 @@
-import { Router } from "express";
-import { sample_products, sample_tags } from "../data.js";
-
-const router = Router();
+const express = require("express")
+const router = express.Router();
+const { sample_products, sample_tags } = require('../data.js')
 
 router.get('/', (req, res) => {
     res.send(sample_products);
@@ -26,13 +25,10 @@ router.get('/tag/:tag', (req, res) => {
     res.send(products)
 })
 
-export default router;
+router.get('/:productID', (req, res) => {
+    const { tag } = req.params;
+    const products = sample_products.filter(item => item.tags?.includes(tag));
+    res.send(products)
+});
 
-
-/*
-No frontend:
-
-sample_products.filter(item => 
-    item.name.toLowerCase().includes(searchTerm.toLowerCase())
-);
-*/
+module.exports = router

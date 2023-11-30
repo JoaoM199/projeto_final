@@ -18,7 +18,7 @@ const NewAccount = () => {
     setError("")
 
     const user = {
-      name,
+      displayName,
       birthDate,
       adress,
       email,

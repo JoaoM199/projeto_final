@@ -33,7 +33,6 @@ return {
     id: user.id, 
     email: user.email, 
     name: user.name,
-    date: user.date,
     adress: user.adress,
     isAdmin: user.isAdmin,
     token,

@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 // Conexão
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASS;
+const dbUser = process.env.USER;      // Username mongo
+const dbPassword = process.env.PASS;  // Password mongo
 
 const conn = async () => {
     try {

@@ -1,0 +1,33 @@
+.card {
+    border: 2px solid #69340d;
+    background-color: #fffd94;;
+    padding: 16px;
+    margin: 16px;
+    width: 200px;
+    cursor: pointer;
+    margin: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    border: 2px solid #69340d;
+    background-color: #ffffff;;
+    transform: scale(1.05);
+}
+
+.product {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkred;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.price {
+    font-style: oblique;
+    color: red;
+}
